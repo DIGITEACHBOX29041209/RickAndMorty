@@ -1,0 +1,58 @@
+<div class="fondo">
+    <div class="containerRick mb-5">
+        <div class="m-0 p-2 text-center bgBtn">
+            <h1 class="letra14minute W-100 text-center"><strong>{{name}}</strong></h1>        
+        </div>
+
+        <div class="p-0 m-0 mt-2 ">
+            <div class="rounded bgColorPurpura text-white row p-2 m-2">
+                <div class="w-100 m-2 p-0 cntdorBtns">
+                    <label class="text-end m-0 bgBtn p-2 rounded letrafontblue"><strong>{{id}}</strong></label>
+                </div>
+                <div class="col-sm-4 text-center m-0 pr-sm-0 pl-sm-0 pl-2 pr-2 rounded mb-sm-0 mb-3">
+                    <img class="bgBtn w-100" src="{{image}}">
+                </div>
+                <div class="col-sm-8 m-0  w-100 pr-2 pl-2 pt-0 pb-0">
+                    <div class="bgBtn h-100 p-3">
+                        <p class="m-0 p-0 letrafontblue"><strong class="letrafontblueStrong">created</strong>: {{created}}</p>
+                        <p class="m-0 p-0 letrafontblue"><strong class="letrafontblueStrong">gender</strong>: {{gender}} </p>
+                        <p class="m-0 p-0 letrafontblue"><strong class="letrafontblueStrong">species</strong>: {{species}} </p>
+                        <p class="m-0 p-0 letrafontblue"><strong class="letrafontblueStrong">status</strong>: {{status}} </p>
+                        <p class="m-0 p-0 letrafontblue"><strong class="letrafontblueStrong">type</strong>: {{type}} </p>
+                        <br>
+                        <p class="m-0 p-0 letrafontblue"><strong class="letrafontblueStrong">location</strong>: {{locationName}} </p>
+                        <p class="m-0 p-0 letrafontblue"><strong class="letrafontblueStrong">Origin</strong>: {{OriginName}} </p>
+                    </div>
+                </div>
+                <div class="cntdorBtns mt-2 w-100">
+                    <button title="I like"  (click)="SeleccionarBtnMeGusta()" [ngClass]="{'imgButtonDos': Like == '1', 'imgButton': Like != '1'}"  ><img class="w-100" src="../../../assets/imagenes/like.png"/></button>
+                   <div class="m-2"></div>
+                    <button title="I do not like it" (click)="SeleccionarBtnNoMeGusta()" [ngClass]="{'imgButtonDos': NotLike == '1', 'imgButton': NotLike != '1'}" ><img class="w-100" src="../../../assets/imagenes/dislike.png"/></button>
+                </div>
+            </div>
+
+            <div class="rounded bgColorPurpura text-white row p-2 m-2">
+                <div class="bgBtn p-3 w-100">
+                    <h5 class="letra14minute W-100 text-center"><strong>LOCATION</strong></h5>   
+                    <p class="m-0 p-0 letrafontblue"><strong class="letrafontblueStrong">created</strong>: {{locationcreated}}</p>
+                    <p class="m-0 p-0 letrafontblue"><strong class="letrafontblueStrong">dimension</strong>: {{locationdimension}} </p>
+                    <p class="m-0 p-0 letrafontblue"><strong class="letrafontblueStrong">id</strong>: {{locationid}} </p>
+                    <p class="m-0 p-0 letrafontblue"><strong class="letrafontblueStrong">name</strong>: {{locationname}} </p>
+                    <p class="m-0 p-0 letrafontblue"><strong class="letrafontblueStrong">type</strong>: {{locationtype}} </p>
+                </div>
+            </div>
+
+            <div class="rounded bgColorPurpura text-white row p-2 m-2">
+                <div class="bgBtn p-3 w-100">
+                    <h5 class="letra14minute W-100 text-center"><strong>ORIGIN</strong></h5>   
+                    <p class="m-0 p-0 letrafontblue"><strong class="letrafontblueStrong">created</strong>: {{Origincreated}}</p>
+                    <p class="m-0 p-0 letrafontblue"><strong class="letrafontblueStrong">dimension</strong>: {{Origindimension}} </p>
+                    <p class="m-0 p-0 letrafontblue"><strong class="letrafontblueStrong">id</strong>: {{Originid}} </p>
+                    <p class="m-0 p-0 letrafontblue"><strong class="letrafontblueStrong">name</strong>: {{Originname}} </p>
+                    <p class="m-0 p-0 letrafontblue"><strong class="letrafontblueStrong">type</strong>: {{Origintype}} </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

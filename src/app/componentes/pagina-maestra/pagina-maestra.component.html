@@ -1,0 +1,38 @@
+<div class="fondo">
+    <div class="containerRick">
+        <div class="m-0 p-0 text-center bgBtn">
+            <img class="text-center w-50 tamanoImagen" src="https://www.seekpng.com/png/full/112-1129023_no-account-no-worries-rick-and-morty-logo.png">
+        </div>
+        <div class="mt-2 letrafontblue displyFlex">
+            <h5> <strong>Total Results: {{totalResul}}</strong></h5>
+            <h5> <strong>{{pagActual}}</strong></h5>
+        </div>
+        <div class="row mt-3 m-0 p-0 ">
+            <div class="col-sm-3 col-6 p-0 m-0 mt-2 " *ngFor="let arRespuTarje of ListaTarjetas; index as id">
+                <div class="rounded bgColorPurpura text-white row p-2 m-2 h-100 ">
+                    <div class="w-100 m-0 p-0">
+                        <label class="text-end m-0 bgBtn pr-2 pl-2 rounded letrafontblue"><strong>{{arRespuTarje.id}}</strong></label>
+                    </div>
+                    <div class="w-100 text-center m-0 p-0 cursorPointer" title="more information" (click)="DetallePersonaje(arRespuTarje)">
+                        <img class="rounded-circle imgTarjetas" src="{{arRespuTarje.image}}">
+                    </div>
+                    <div class="mt-3 bgBtn w-100 p-2">
+                        <h4 class=""><strong class="letra14minute">{{arRespuTarje.name}}</strong></h4>
+                        <p class="m-0 p-0 letrafontblue"><strong class="letrafontblue">Gender: </strong>{{arRespuTarje.gender}} </p>
+                        <p class="m-0 p-0 letrafontblue"><strong class="letrafontblue">Species: </strong>{{arRespuTarje.species}} </p>
+                        <p class="m-0 p-0 letrafontblue"><strong class="letrafontblue">Status: </strong>{{arRespuTarje.status}} </p>
+                    </div>
+                    <div class="cntdorBtns mt-2 w-100">
+                        <button title="I like" [ngClass]="{'imgButtonDos': ListaLike[id] == 1, 'imgButton': ListaLike[id] != 1}"  (click)="SeleccionarBtnMeGusta(arRespuTarje)"><img class="w-100" src="../../../assets/imagenes/like.png"/></button>
+                        <div class="m-2"></div>
+                        <button title="I do not like it" [ngClass]="{'imgButtonDos': ListaNoLike[id] == 1, 'imgButton': ListaNoLike[id] != 1}"  (click)="SeleccionarBtnNoMeGusta(arRespuTarje)"><img class="w-100" src="../../../assets/imagenes/dislike.png"/></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-3 pb-5 text-center">
+            <button class="mr-2 mt-3 btn btn-success letrafontblue" *ngFor="let arRespu of Paginacion; index as idI" (click)="SeleccionarPaginaBtn(idI)">{{arRespu}}</button>
+        </div>
+    </div>
+</div>
+

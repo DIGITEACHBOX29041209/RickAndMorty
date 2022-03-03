@@ -1,0 +1,122 @@
+.tamanoImagen{
+    max-width: 300px;
+}
+
+.containerRick{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1400px;
+}
+
+.imgTarjetas{
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+}
+
+.imgTarjetas:hover{
+    box-shadow: 0px 0px 20px #660659;
+}
+
+.imgButton{
+    width: 50px;
+    height: 50px;
+    background-color: RGBA( 0 , 0 , 0, 0.3 );
+    border-radius: 50px;
+    border: transparent solid 1px;
+    
+}
+
+.imgButton:hover{
+    width: 50px;
+    height: 50px;
+    background-color: RGBA( 0 , 0 , 0, 0.4 );
+    box-shadow: 0px 0px 5px #660659;
+    border-radius: 50px;
+    border: transparent solid 1px;
+}
+
+.imgButtonDos{
+    width: 50px;
+    height: 50px;
+    background-color: RGBA( 0 , 0 , 0, 0.9 );
+    border-radius: 50px;
+    border: transparent solid 1px; 
+}
+
+.imgButtonDos:hover{
+    box-shadow: 0px 0px 5px #660659;
+}
+
+.cntdorBtns{
+    display: flex;
+    justify-content: end;
+}
+
+.cntNavItems{
+    display: flex;
+    justify-content: center;
+}
+
+.displyFlex{
+    display: flex;
+    justify-content:space-between;
+}
+
+.maxLineUna{
+    height: 40px;
+}
+
+.bgColorPurpura{
+    background-color: #FF5CEA;
+    border: #DEFF87 solid 4px;
+    background-image: url('https://www.pngplay.com/wp-content/uploads/10/Rick-And-Morty-PNG-HD-Quality.png');
+}
+
+.bgBtn{
+    background-color: #DEFF87;
+    color: #660659;
+    font-weight: 200;
+    border-radius: 10px;
+}
+
+.fondo{
+    background-image: url('../src/assets/imagenes/fondoMortyclaro.png');
+    min-height: 100vh;
+}
+
+@font-face {
+    font-family: minute;
+    src: url('../src/assets/font/14minute.ttf') format("opentype");
+  }
+
+  @font-face {
+    font-family: fontblue;
+    src: url('../src/assets/font/BrainFlower.ttf') format("opentype");
+  }
+
+.letra14minute{
+    font-family: 'minute', 'arial', sans-serif;
+    letter-spacing: 3px;
+}
+  
+.letrafontblue{
+    font-family: 'fontblue', 'arial', sans-serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+.letrafontblueStrong{
+    font-family: 'fontblue', 'arial', sans-serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-decoration: underline;
+    font-variant: small-caps;
+}
+
+.cursorPointer{
+    cursor: pointer;
+}
